@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="script.js"></script>
+   
+</head>
+<body>
+
+    <h2 class=" display-4 text-center  my-5">Weather App
+        <i class="bi bi-brightness-high-fill"></i>
+        <i class="bi bi-cloud-drizzle"></i>
+        <i class="bi bi-lightning-charge-fill"></i>
+    </h2>
+    
+<div class="container border my-5">
+    <div class="row justify-content-center align-items-center" style="height:500px; background: rgba(255,255,255,.2)">
+        <div class="col-md-8">
+           
+            <input id="city-input" class="position-relative" type="text" placeholder="Search city">
+            <div class="btn btn-primary mx-5" onclick="searchCity()">Search</div>
+            <div class=" col-md-12 alert alert-primary text-center my-0" role="alert" id = 'cityName'>
+                CITY NAME </div>
+            <div class=" col-md-12 alert alert-warning text-center my-0" role="alert" id = 'weatherName'>
+                    Weather </div>
+            <div class=" col-md-12 alert alert-info text-center my-0" role="alert" id = 'temp'>
+                        Current Temp </div>
+            <div class=" col-md-12 alert alert-dark text-center" role="alert" id = 'minTemp'>
+                            Min Temp </div>
+            <div class=" col-md-12 alert alert-danger text-center" role="alert" id = 'maxTemp'>
+                              max temp </div>
+        
+        
+                 </div>    
+        <div class="col-md-4">
+            <img id = weatherImage src="">
+        </div>
+           
+    
+</div>
+</div>
+
+
+</body>
+</html>
